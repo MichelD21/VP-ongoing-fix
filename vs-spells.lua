@@ -1,7 +1,7 @@
 local _, T = ...
 
 T.KnownSpells = {
-	[90]={type="passive", target="friend-surround", modDamageDealt=20},
+	[90]={type="passive", target="friend-surround", modDamageDealt=20},											-- Invigorating Herbs
 	[53]={type="aura", target="all-enemies", duration=6, period=2, modDamageDealt=-20, damageATK=10},
 	[89]={type="aura", target=1, duration=3, damageATK=40, nore=true},
 	[96]={type="aura", target=1, duration=2, damageATK1=60, modDamageDealt=-30},
@@ -26,7 +26,7 @@ T.KnownSpells = {
 	[4]={type="nukem", target=0, damageATK={75, 50}},
 	[44]={type="nukem", target=0, damageATK={50, 25}},
 	[48]={type="heal", target=4, healATK=20, shroudTurns=1},
-	[21]={type="aura", target="all-allies", healATK=25, duration=5, noFirstTick=true},
+	[21]={type="aura", target="all-allies", healATK=25, duration=5, noFirstTick=true},							-- Spirits of Rejuvenation
 	[45]={type="nuke", target=1, damageATK=75, selfhealATK=25},
 	[6]={type="nuke", target="enemy-back", damageATK=60},
 	[49]={type="aura", target="enemy-back", modDamageTaken=33, duration=4},
@@ -36,8 +36,8 @@ T.KnownSpells = {
 	},
 	[61]={type="nuke", target=0, damageATK=75},
 	[60]={type="nuke", target=1, damageATK=40},
-	[103]={type="aura", target="all-other-allies", modDamageDealt=100, duration=2},
-	[104]={
+	[103]={type="aura", target="all-other-allies", modDamageDealt=100, duration=2},								-- Social Butterfly
+	[104]={																										-- Podtender
 		{type="heal", target=3, healATK=100},
 		{type="aura", target=3, modDamageDealt=-10, duration=1},
 	},
@@ -288,8 +288,8 @@ T.KnownSpells = {
 	[84]={type="aura", target="all-enemies", duration=2, firstTurn=4, modDamageDealt=-100},
 	[85]={type="aura", target=3, duration=2, firstTurn=3, modDamageTaken=-5000},
 	[105]={type="passive", target="all-allies", modDamageTaken=-10},
-	[106]={type="nuke", target="cleave", damageATK=40},
-	[109]={type="passive", target=4, thornsATK=60},
+	[106]={type="nuke", target="cleave", damageATK=40},															-- Face Your Foes
+	[109]={type="passive", target=4, thornsATK=60},																-- Mace to Hand
 	[110]={type="heal", target=4, healATK=40},
 	[236]={type="aura", target="all-allies", duration=2, modDamageTaken=-50},
 	[237]={type="nuke", target="enemy-front", damageATK=50},
@@ -351,7 +351,6 @@ T.KnownSpells = {
 	[192]={type="nuke", target=1, damageATK=160},
 	[303]={type="nuke", target="enemy-back", damageATK=25},
 	-- 9.1 --
-	[344]={type="nuke", target="all-enemies", damageATK=30},													-- Razorwing Buffet
 	[308]={firstTurn=3, type="nuke", target=1, damageATK=350},								
 	[305]={type="nuke", target="enemy-back", damageATK=120},
 	[312]={type="nuke", target="cone", damageATK=180},
@@ -367,11 +366,13 @@ T.KnownSpells = {
 		{type="nuke", target=0, damageATK=100},
 		{type="aura", target=0, duration=1, plusDamageDealtATK=-70},
 	},
-	[329]={type="aura", target=4, duration=3, modDamageTaken=-50},
+	[326]={type="nuke", target="cleave", damageATK=25},															-- Shiftless Smash
 	[327]={type="aura", target="all-allies", duration=3, plusDamageDealtATK=20},								-- Inspirational Teachings
 	[328]={type="nuke", target=0, damageATK=30},																-- Applied Lesson
-	[330]={type="aura", target=4, duration=2, plusDamageDealtATK=20},											-- Oversight
-	[331]={type="aura", target="all-allies", duration=1, plusDamageDealtATK=20},								-- Supporting Fire
+	[329]={type="aura", target=4, duration=3, modDamageTaken=-50},
+	[330]={type="aura", target="all-allies", duration=2, plusDamageDealtATK=20},								-- Oversight
+	[331]={type="aura", target="all-other-allies", duration=3, plusDamageDealtATK=20},							-- Supporting Fire
+	[332]={type="nuke", target=1, damageATK=150},																-- Emptied Mug
 	[333]={type="aura", target=4, duration=3, plusDamageDealtATK=40},											-- Overload
 	[334]={type="nuke", target=0, damageATK=90},																-- Hefty Package
 	[335]={type="nuke", target="enemy-back", damageATK=40},														-- Errant Package
@@ -380,5 +381,6 @@ T.KnownSpells = {
 		{type="nuke", target="enemy-front", damageATK=80},										
 		{type="aura", target=4, duration=1, modDamageDealt=20},
 	},
+	[344]={type="nuke", target="all-enemies", damageATK=30},													-- Razorwing Buffet
 	[347]={type="nuke", target="cone", damageATK=100},															-- Darkness from Above
 }
